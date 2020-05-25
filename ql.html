@@ -98,25 +98,19 @@
 
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3">Implementing an algorithm for finding the least resource intensive path using reinforcement learning
-      <small>by
-        <a href="#">MLVL</a>
-      </small>
     </h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
         <a href="index.html">Home</a>
       </li>
-      <li class="breadcrumb-item active">NEAT</li>
+      <li class="breadcrumb-item active">Q-learning</li>
     </ol>
 
     <div class="row">
 
       <!-- Post Content Column -->
       <div class="col-lg-8">
-
-        <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/ql-learn.jpg" alt="">
 
         <hr>
 
@@ -127,6 +121,9 @@
 
         <!-- Post Content -->
         <p class="lead">Implementing an algorithm for finding the least resource intensive path using reinforcement learning (Q-learning)</p>
+        <img class="img-fluid rounded" src="img/ql-learn.jpg" alt="">
+        <br>
+        <br>
 
 <p>When the reinforcement learning algorithm is launched, an array of possible states and actions R is created, which shows where the agent can go and where not, as well as the location of the target on the map (the numbering starts at zero and runs horizontally and top down in ascending order). After that, the second array Q is created and filled with zeros. Then training takes place: in order for an agent to learn how to find the lease resource intensive path from any position on the map, it needs to check each such state (after creating the first array R, an array of possible initial states is also created).</p>
 <p>Then the agent leaves each such state and calculates his next move, comparing the rewards for all possible subsequent actions. After that, the second array with award weights is filled in accordance with formula (3) (Markov decision process):</p>

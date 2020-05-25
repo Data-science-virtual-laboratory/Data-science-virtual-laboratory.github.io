@@ -98,9 +98,6 @@
 
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3">Implementation of the least resource intensive path finding algorithm using the genetic algorithm
-      <small>by
-        <a href="#">MLVL</a>
-      </small>
     </h1>
 
     <ol class="breadcrumb">
@@ -115,9 +112,6 @@
       <!-- Post Content Column -->
       <div class="col-lg-8">
 
-        <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/neat-learn.jpg" alt="">
-
         <hr>
 
         <!-- Date/Time -->
@@ -127,7 +121,9 @@
 
         <!-- Post Content -->
         <p class="lead">Implementation of the least resource intensive path finding algorithm using the genetic algorithm (NEAT)</p>
-
+        <img class="img-fluid rounded" src="img/neat-learn.jpg" alt="">
+        <br>
+        <br>
 <p>The least resource intensive path finding algorithm using the genetic algorithm (NEAT) works according to the following principle: when the program launches, each agent randomly generates an array of directions, presented in the form of positions for movements formed from angles (the size of this array can be adjusted for example to limit number of possible movements of the agents).</p>
 <p>After that, each agent starts moving in accordance with the direction elements array and stops moving as soon as it touches a user-defined area (for example, an obstacle on the map), reaches the goal, or when the elements in the direction array end (the number of moves ends).</p>
 <p>Then, the selection (natural selection principle) of the best agents for further training occurs: the formation of the next generation based on data of the previous generation best agent and the mutation rate parameter happens. The larger this parameter is, the larger the array of directions of the next generation agents differs from the previous one. The “fitness” of an agent is set according to a certain formula, for example, for a given algorithm, the "fitness" of the agent that is closest to the target as compared to the others is greater (1).</p>
